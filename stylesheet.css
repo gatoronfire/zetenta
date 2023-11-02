@@ -347,6 +347,7 @@
         background-color: rgb(255, 255, 255);
         margin: 0;
         font-family: 'Roboto',sans-serif;
+        overflow-x: hidden;
     }
     header{
         position: fixed;
