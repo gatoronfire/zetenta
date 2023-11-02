@@ -1,6 +1,6 @@
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 615px) {
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-    html{width: 100%; background-color: white;}
+    html{width: 100%; background-color: white; height: 100%;}
     body {
         font-family: 'Roboto', sans-serif;
         padding: 0;
@@ -60,19 +60,15 @@
         justify-content: center;
         align-items: flex-end;
     }
-    #driver>div>img{
+    #logo{
         position: absolute;
         top: 0px;
         left:0px;
         right: 0px;
         display: flex;
-        z-index: 1;
+        z-index: 3;
         width: max-content;
        
-    }
-    #logo{
-        position: absolute;
-        z-index: 3;
     }
     #paraph{
         position: absolute;
@@ -120,33 +116,35 @@
         display: flex;
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 5.556vw;
         justify-content: space-around;
     }
     #contacto #wts{
-        width: 170px;
-        height: 40px;
+        width: 49.444vw;
+        height: auto;
         margin: 0 auto 0 auto;
         display: block;
     }
     p#datos1{
         font-family: 'Roboto',sans-serif;
         font-weight:400;
-        font-size: 14px;
+        font-size: 3.889vw;
     }
     ol#autos{
         list-style-type: none;
        margin: auto;
        padding: 0;
-       width: 310px;
+       width: 86.072vw;
        
     }
     ol#autos li select{
-        width: 309px;
+        width: 86.072vw;
         height: 36px;
+        border-style: solid;
         border-color: #D9D9D9;
         border-radius: 4px;
         align-self: center;
+        background-color: white;
     }
     ol#autos li{
         margin-top: 10px;
@@ -175,7 +173,7 @@
     }
     h1{
         font-family: 'Roboto',sans-serif;
-        font-size: 22px;
+        font-size: 6.128vw;
         font-weight: bold;
         color: #00358E;
         width: fit-content;
@@ -201,7 +199,7 @@
         text-align: center;
     }
     #seguro ol img{
-        width: 62px;
+        width: 17.270vw;
         margin: 5px auto;
     }
     #seguro div{
@@ -221,7 +219,7 @@
         padding: 0;
     }
     div#cards>ol>li{
-        width: 310px;
+        width: 86.351vw;
         height: fit-content;
         background-color: white;
         border-radius: 12px;
@@ -279,9 +277,9 @@
     #back1{
         position: absolute;
         bottom: 0;
-        transform: rotate(90deg);
+        transform: rotate(180deg);
     }
-    #datos_f h2{
+    div.datos_f h2{
         font-family: 'Roboto', sans-serif;
         font-size: 16px;
         font-weight: bold;
@@ -289,16 +287,16 @@
         margin: auto;
         line-height: 28px;
     }
-    #datos_f p{
+    div.datos_f p{
         width: fit-content; 
         margin: auto;
         line-height: 28px;
         padding-bottom:30px ;
     }
-    div#datos_f.pad{
+    div.datos_f.pad{
         padding-top: 50px;
     }
-    #datos_f{
+    div.datos_f{
         padding: 25px 0 0 0;
         border-style: solid;
         border-width: 0 0 1px 0;
@@ -309,6 +307,7 @@
         display: flex;
         justify-content: space-around;
         margin-top: 25px;
+        border: none;
     }
     #disclaimer p{
         font-family: 'Roboto', sans-serif;
@@ -329,11 +328,16 @@
         letter-spacing: -0.3%;
         text-align: left;
     }
-    #contacto_pc, #autos_pc{display: none;}
+    #contacto_pc, #autos_pc, #logo1, #long, #siguiente_pc, #disclaimer_pc{display: none;}
     }
     
- @media screen and (min-width: 360px) {
-    #contacto, #autos{display: none;}
+ @media screen and (min-width: 615px) {
+    #contacto, #autos, #logo, #siguiente,#short, #disclaimer {display: none;}
+    html{
+        width: 100%;
+        height: 100%;
+        background-color: white;
+    }
     body::-webkit-scrollbar{
         display: none;
     }
@@ -344,39 +348,72 @@
         margin: 0;
         font-family: 'Roboto',sans-serif;
     }
+    header{
+        position: sticky;
+        z-index: 1;
+        top: 0;
+        background-color: white;
+        box-shadow: 0px 4px 8px 3px rgba(51, 51, 51, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 7.462vw;
+        width: 100%;
+    }
+    #long{
+        width: 24.872vw;
+        margin-left: 6.218vw;
+    }
+    header>div{
+        background-color: #00358E;
+        border-radius: 60px;
+        color: white;
+        font-size: 1.170vw;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 13.533vw;
+        height: 2.926vw;
+        margin-right: 6.218vw;
+    }
     #driver{
         position: absolute;
         top: 0;
         width: 100%;
-        height: 90%;
+        height: 100%;
         margin: 0;
         background-image: url(./images/shutterstock_1489028564\ 2.svg);
         background-size: cover;
+        z-index: 2;
     }
-    #logo{display: none;}
     #logo1 {
-        width: 340px;
-        margin: 25px 0 0 25px;
+        width: 24.872vw;
+        margin: 1.975vw 0 0 6.364vw;
         z-index: 2;
         position: absolute;
     }
     .shadow1{
-        height: 30%;
-    border: 0;
-    background-image: linear-gradient(rgb(22, 22, 22),rgba(0, 0, 0, 0.0));
-    margin: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
+        height: 9.510vw;
+        border: 0;
+        background-image: linear-gradient(rgb(22, 22, 22),rgba(0, 0, 0, 0.0));
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        opacity: 76%;
+
     }
     .shadow2{
-        height: 40%;
+        height: 26.701vw;
         border: 0;
         background-image: linear-gradient( rgba(0, 0, 0, 0), rgb(0, 0, 0));
         margin: 0;
         position: absolute;
         bottom: 0;
         width: 100%;
+        opacity: 76%;
+
     }
     #paraph{
         position: relative;
@@ -389,9 +426,9 @@
     }
     #paraph>p{
         font-weight: bold;
-        font-size: 50px; 
+        font-size: 4.389vw; 
         color: white;
-        margin: 400px auto auto auto;
+        margin: 33.869vw auto auto auto;
 
     }
     #contacto_pc{
@@ -404,12 +441,216 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 27.5%;
     }
     #coti {
         font-weight: bold;
         font-size: 26px;
+        margin: 4vh 0 0 0;
+    }
+    #wts{
+        margin: 15px auto ;
     }
     #datos1 {
         font-size: 14px;
+        margin-bottom: 0;
+    }
+    #autos_pc{
+        width: 76%;
+        padding: 0;
+        position: relative;
+        height: 100%;
+    }
+    #autos_pc>li{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    #autos_pc>li>select{
+        width: 100%;
+        height: 36px;
+        border-color: #BBBBBB;
+        border-radius: 4px;
+    }
+    #siguiente_pc{
+        display: flex;
+        background-color: #3457FA;
+        justify-content: space-around;
+        font-weight: bold;
+        font-size: 16px;
+        width: 100%;
+        height: 46px ;
+        border-radius: 60px;
+        color: white;
+        position: absolute;
+        bottom: 0;
+    }
+    #seguro{
+        width: 100%;
+        margin: 92vh auto auto auto;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        justify-content: center;
+        align-items: center;
+    }
+    #seguro>ol{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: space-around;
+    }
+    #seguro>ol>li{
+        width: 15%;
+        height: 13%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.609vw;
+    }
+    #seguro>ol>li>img{
+        width: 8.088vw;
+        margin-bottom: 2%;
+    }
+    #seguro>h1{
+        font-size: 2.634vw;
+        font-weight: bold;
+        color: #00358E;
+    }
+    #seguro>div{
+        margin-top: 7.794vw;
+        margin-bottom: 6.437vw;
+        font-size: 1.170vw;
+    }
+    #cards{
+        background-color: #F7F4EF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 8.486vw;
+    }
+    #cards>h1{
+        margin-top: 7.535vw;
+        font-size: 2.634vw;
+        font-weight: bold;
+        color: #00358E;
+    }
+    #cards>ol{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #cards>ol>li{
+        background-color: white;
+        border-radius: 6px;
+        height: 25.384vw;
+        margin:0.512vw;
+        width: 21.068vw;
+        position: relative;
+        box-shadow: 0px 4px 4px 0px rgba(51, 51, 51, 0.2),0px 8px 12px 6px rgba(0, 0, 0, 0.1);
+    }
+    #cards>ol>li>h2{
+        font-size: 1.463vw;
+        font-weight: bold;
+        color: #00358E;
+        width: 15.25vw;
+        margin-top: 2.999vw;
+    }
+    #cards>ol>li>ol{
+        padding: 0;
+        list-style: disc;
+        margin-left: 43px;
+        font-size: 1.170vw;
+        margin-top: 1.683vw;
+        line-height: 1.756vw;
+    }
+    .padding{
+        margin-left: 25px;
+    }
+    #cards>ol>li>h2.padding1{
+        width: 200px;
+        margin-left: 25px;
+    }
+    #cards div{
+        display: flex;
+        background-color: #3457FA;
+        width: 13.533vw;
+        height: 2.926vw;
+        border-radius: 60px;
+        color: white;
+        font-size:1.176vw;
+        font-weight: bold;
+        justify-content: center;
+        line-height: 10px;
+        margin-top: 20px;
+        position: absolute;
+        bottom: 2.121vw;
+    }
+    footer{
+        background-color: #00358E;
+        color: white;
+        position: relative;
+    }
+    #back{
+        position: absolute;
+        transform: rotate(90deg);
+        top: 0; 
+        right: 0;
+        width: 36.650vw;
+    }
+    #back1{
+        position: absolute;
+        bottom: 0;
+        transform: rotate(-90deg);
+        width: 36.650vw;
+    }
+    footer>section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    div.datos_f{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:6.730vw 0 0 0;
+        height: 7.096vw;
+        border-color: white;
+        border-style: solid;
+        padding: 0 6.218vw 0 6.218vw;
+        border-width: 0 1px 0 0;
+        width: 11.631vw;
+    }
+    div.datos_f>h2{
+        font-size: 1.170vw;
+        margin:0;
+        line-height: 2.048vw;
+        width: 12.6vw;
+    }
+    div.datos_f>p{
+        margin:0;
+        line-height: 2.048vw;
+    }
+    #SSN_logo{
+        border: none;
+        width: 19.093vw;
+    }
+    #SSN_logo>img{
+        width: 100%;
+    }
+    #disclaimer_pc{
+        width: 87.271vw;
+        margin: auto;
+        font-size: 0.86vw;
+        padding: 5.852vw;
+        line-height: 1.756vw;
+    }
+    #service{
+        font-size:0.86vw ;
+        font-weight: bold;
     }
 } 
