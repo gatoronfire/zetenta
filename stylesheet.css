@@ -13,7 +13,7 @@
         display: none;
     }
     header {
-        position: sticky;
+        position: fixed;
         top: 0;
         justify-content:space-between;
         display: flex;
@@ -349,7 +349,7 @@
         font-family: 'Roboto',sans-serif;
     }
     header{
-        position: sticky;
+        position: fixed;
         z-index: 1;
         top: 0;
         background-color: white;
